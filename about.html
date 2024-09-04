@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            background-color: rgb(115,64, 96);
+            color: hsl(339, 100%, 93%);
+            justify-content: center;
+            align-items: center;
+            margin-top: -10px;
+            width: 100%;
+            height: 0.75cm;
+            box-sizing: border-box;
+        }
+        .logo {
+            width: 25%;
+            text-align: center;
+            font-size: 0.9cm;
+            font-family: "Dancing Script", cursive;
+            color: rgb(115,64, 96);
+            font-weight: bold;
+        }
+        .menu {
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+        }
+        .font {
+            width: 100%;
+            text-decoration: none;  
+        }
+        nav {
+            display: flex;
+            height: 2.1cm;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            border-bottom: 1px solid rgb(193, 193, 193);
+        }
+        .about {
+            margin-left: 0.5cm;
+            margin-top: 1.5cm;
+            display: flex;
+            background-color: rgb(234, 234, 234);
+        }
+        .content {
+            margin-left: 1cm;
+            margin-top: 3cm;
+            height: auto; 
+            width: 80%;
+            flex-direction: column;
+        }
+        .pic {
+            display: flex;
+            height: 14cm;
+            width: 12cm;
+            background-size: cover;
+            border-radius: 0.2cm;
+            background-image: url(https://ranveerbrar.com/wp-content/uploads/2020/12/Image-about-me-ranveer-brar.png);
+            transition: transform 0.3s ease; 
+            cursor: pointer;
+            transform-origin: center; 
+        }
+        .fontsize {
+            font-size: 0.8cm;
+            font-weight: bolder;
+        }
+        p {
+            height: auto;
+            width: 10cm;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 15px; 
+            padding: 10px;
+        }
+        .gallery-item {
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer; 
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease; 
+            border-radius: 10px;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1); 
+        }
+        a {
+            text-decoration: none;
+            font-size: larger;
+            color: black;
+        }
+        a:hover {
+            color: hsl(339, 37%, 37%);
+        }
+        img {
+            border-radius: 0.2cm;
+            transition: transform 0.3s ease; 
+        }
+        footer {
+            background: rgb(115,64, 96);
+            color: white;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            font-size: large;
+            padding: 2px 0;
+            margin-top: 25px;
+            height: 0.7cm;
+        }
+        @media screen and (max-width: 768px) {
+            .about {
+                flex-direction: column;
+                align-items: center;
+            }
+            .content {
+                text-align: center;
+                margin: 0;
+            }
+            .menu {
+                flex-direction: column;
+                align-items: center;
+            }
+            .font {
+                flex-direction: column;
+                align-items: center;
+            }
+            .fontsize {
+                font-size: 1.2rem;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .menu {
+                font-size: 0.8rem;
+            }
+            .logo {
+                font-size: 1.5rem;
+            }
+            .fontsize {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Get everyday dinner plan for you!.....</header>
+    <nav>
+        <div class="logo">The Foodie's Gallery</div>
+        <div class="menu">
+            <div class="font">
+                <ul>
+                    <li><a href="/pro.html">HOME</a></li>
+                    <li><a href="/about.html">ABOUT</a></li>
+                    <li><a href="/recipie.html">RECIPE INDEX</a></li>
+                    <li><a href="/subscribe.html">SUBSCRIBE</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="about">
+        <div class="pic" id="zoomable"></div>
+        <div class="content">
+            <div class="fontsize">About Me</div>
+            <p>Passion for food has driven me to every nook and corner of the world. From becoming the youngest executive chef at a five-star hotel, to hosting my own cooking shows, it is my love for cooking that has got this far. Through this website, I intend to take you on a culinary journey, exploring new places, cultures, and flavors. Let’s engage, exchange, and evolve our skills and taste buds.</p>
+        </div>
+    </div><br><br><br>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://ranveerbrar.com/wp-content/uploads/2021/02/Twitter-Ranveer-Brar.jpg" height="250px" width="250px" alt="Twitter">
+            <a href="https://www.instagram.com/ranveer.brar/">Instagram</a>
+        </div>
+        <div class="gallery-item">
+            <img src="https://ranveerbrar.com/wp-content/uploads/2021/02/Youtube-Ranveer-Brar.jpg" height="250px" width="250px" alt="YouTube">
+            <a href="https://www.youtube.com/c/ChefRanveer">YouTube</a>
+        </div>
+        <div class="gallery-item">
+            <img src="https://ranveerbrar.com/wp-content/uploads/2021/02/Facebook-Ranveer-Brar.jpg" height="250px" width="250px" alt="Facebook">
+            <a href="https://www.facebook.com/RanveerBrar">Facebook</a>
+        </div>
+        <div class="gallery-item">
+            <img src="https://ranveerbrar.com/wp-content/uploads/2021/02/Wikipedia-Ranveer-Brar.jpg" height="250px" width="250px" alt="LinkedIn">
+            <a href="https://www.linkedin.com/in/ranveerbrar/">LinkedIn</a>
+        </div>
+        <div class="gallery-item">
+            <img src="https://ranveerbrar.com/wp-content/uploads/2021/02/Instagram-Ranveer-Brar.jpg" height="250px" width="250px" alt="Twitter">
+            <a href="https://twitter.com/ranveerbrar">Twitter</a>
+        </div>
+        <div class="gallery-item">
+            <img src="https://ranveerbrar.com/wp-content/uploads/2021/02/Pinterest-Ranveer-Brar.jpg" height="250px" width="250px" alt="Pinterest">
+            <a href="https://in.pinterest.com/ChefRanveer/_created/">Pinterest</a>
+        </div>
+        <div class="gallery-item">
+            <img src="https://ranveerbrar.com/wp-content/uploads/2021/02/Wikipedia-Ranveer-Brar.jpg" height="250px" width="250px" alt="Wikipedia">
+            <a href="https://en.wikipedia.org/wiki/Ranveer_Brar">Wikipedia</a>
+        </div>
+        <div class="gallery-item">
+            <img src="https://ranveerbrar.com/wp-content/uploads/2021/02/In-the-News-Ranveer-Brar.jpg" height="250px" width="250px" alt="In the News">
+            <a href="https://ranveerbrar.com/press/">In the News</a>
+        </div>
+    </div>
+   
+    <footer>
+        @2024 The Foodie's Gallery | Privacy Policy 
+    </footer>
+<script>
+    
+document.addEventListener('DOMContentLoaded', function() {
+    const galleryItems = document.querySelectorAll('.gallery-item img');
+
+    galleryItems.forEach(img => {
+        let scale = 1;
+        let startX = 0;
+        let startY = 0;
+        let initialDistance = 0;
+
+        function getDistance(touches) {
+            const dx = touches[0].clientX - touches[1].clientX;
+            const dy = touches[0].clientY - touches[1].clientY;
+            return Math.sqrt(dx * dx + dy * dy);
+        }
+
+        img.addEventListener('touchstart', function(event) {
+            if (event.touches.length === 2) {
+                event.preventDefault();
+                initialDistance = getDistance(event.touches);
+                startX = (event.touches[0].clientX + event.touches[1].clientX) / 2;
+                startY = (event.touches[0].clientY + event.touches[1].clientY) / 2;
+            }
+        }, { passive: false });
+
+        img.addEventListener('touchmove', function(event) {
+            if (event.touches.length === 2) {
+                event.preventDefault();
+                const currentDistance = getDistance(event.touches);
+                scale = currentDistance / initialDistance;
+
+                img.style.transform = `scale(${scale}) translate(${startX}px, ${startY}px)`;
+            }
+        }, { passive: false });
+
+        img.addEventListener('touchend', function(event) {
+            if (event.touches.length < 2) {
+                scale = 1; 
+                img.style.transform = 'scale(1)';
+            }
+        });
+    });
+});
+
+</script>
+</body>
+</html>
